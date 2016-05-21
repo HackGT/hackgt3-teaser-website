@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+    font-family: 'Advent Pro', sans-serif;
+    margin: 0;
+    background: url('retina_wood.png');
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 1000px;
+    height: 100%;
+    left: 50%;
+    margin-left: -500px;
+}
+
+.background img {
+    position: absolute;
+}
+
+#headphones {
+    height: 230px;
+    left: -5%;
+    top: 130px;
+    transform: rotate(-8deg);
+}
+
+#tea {
+    height: 200px;
+    left: 20%;
+    top: -50px;
+}
+
+#plant {
+    right: -10%;
+    top: 200px;
+    height: 350px;
+}
+
+#phone {
+    height: 450px;
+    left: 10%;
+    top: 350px;
+    transform: rotate(-15deg);
+}
+
+#pen {
+    height: 200px;
+    right: 28%;
+    top: 400px;
+    transform: rotate(15deg);
+}
+
+#peach {
+    height: 150px;
+    left: -2%;
+    top: 500px;
+    transform: rotate(-5deg);
+}
+
+#notebook {
+    height: 600px;
+    right: 3%;
+    top: 450px;
+    transform: rotate(25deg);
+}
+
+#letter {
+    display: none;
+}
+
+#laptop {
+    height: 600px;
+    right: -30%;
+    top: -150px;
+    transform: rotate(25deg);
+}
+
+.content h1 {
+    font-size: 100px;
+    color: #262626;
+    font-weight: 300;
+    margin: 0;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 280px;
+    margin-left: -140px;
+}
+
+.email {
+    width: 170px;
+    height: 30px;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 20px;
+    border-radius: 7px;
+    display:inline;
+}
+
+.button {
+    font-family: 'Advent Pro', sans-serif;
+    height: 30px;
+    font-size: 15px;
+}
+
+.content .date {
+    font-size: 30px;
+}
+
+.shake {
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 0.4s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(2px, 1px) rotate(-15deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-16deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(-14deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(-15deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(-14deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-16deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(-15deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-16deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(-14deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(-15deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-16deg); }
+}
