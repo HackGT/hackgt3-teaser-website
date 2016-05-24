@@ -56,4 +56,12 @@ router.post('/getEmailID/:email', function(req, response){
 	});
 });
 
+router.get('/sponsors', function(req, res, next) {
+  res.redirect('http://sponsors.hackgt.com/');
+});
+
+router.get('/sponsor', function(req, res, next) {
+  res.redirect('/sponsors');
+});
+
 module.exports = router;
