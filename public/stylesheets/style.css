@@ -12,126 +12,247 @@ body {
     overflow: hidden;
 }
 
-.background {
-    position: absolute;
-    width: 1000px;
-    height: 100%;
-    left: 50%;
-    margin-left: -500px;
+@media (min-width: 320px) {
+
+    .background {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #headphones {
+        display: none;
+    }
+
+    #tea {
+        position: fixed;
+        height: 150px;
+        left: -3.5%;
+        top: 2.5%;
+    }
+
+    #plant {
+        position: fixed;
+        height: 175px;
+        left: -17.5%;
+        top: 28.5%;
+    }
+
+    #phone {
+        position: fixed;
+        height: 300px;
+        left: 0%;
+        top: 60%;
+        transform: rotate(-15deg);
+    }
+
+    #pen {
+        position: fixed;
+        height: 300px;
+        right: 2%;
+        top: 65%;
+        transform: rotate(15deg);
+    }
+
+    #peach {
+        display: none;
+    }
+
+    #notebook {
+        position: fixed;
+        height: 450px;
+        left: 45%;
+        top: 60%;
+        transform: rotate(25deg);
+    }
+
+    #letter {
+        display: none;
+    }
+
+    #laptop {
+        position: fixed;
+        height: 350px;
+        top: -5%;
+        transform: rotate(25deg);
+    }
+
+    .shake {
+        -webkit-animation-name: spaceboots;
+        -webkit-animation-duration: 0.4s;
+        -webkit-transform-origin:50% 50%;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+    }
+
+    .content {
+        display: block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 75px;
+        color: #262626;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .content .date {
+        font-size: 30px;
+    }
+
+    .email {
+        width: 210px;
+        height: 30px;
+        font-family: 'Advent Pro', sans-serif;
+        font-size: 20px;
+        border-radius: 7px;
+        display:inline;
+    }
+
 }
 
-.background img {
-    position: absolute;
-}
+@media (min-width: 750px) {
 
-#headphones {
-    height: 230px;
-    left: -5%;
-    top: 130px;
-    transform: rotate(-8deg);
-}
+    .background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 
-#tea {
-    height: 200px;
-    left: 20%;
-    top: -50px;
-}
+    .background img {
+        position: absolute;
+    }
 
-#plant {
-    right: -10%;
-    top: 200px;
-    height: 350px;
-}
+    #headphones {
+        position: fixed;
+        display: block;
+        height: 230px;
+        left: 5%;
+        top: 180px;
+        transform: rotate(-8deg);
+    }
 
-#phone {
-    height: 450px;
-    left: 10%;
-    top: 350px;
-    transform: rotate(-15deg);
-}
+    #tea {
+        position: fixed;
+        display: block;
+        height: 200px;
+        left: 25%;
+        top: 0px;
+    }
 
-#pen {
-    height: 200px;
-    right: 28%;
-    top: 400px;
-    transform: rotate(15deg);
-}
+    #plant {
+        position: fixed;
+        display: block;
+        right: 0px;
+        left: 70%;
+        top: 200px;
+        height: 350px;
+    }
 
-#peach {
-    height: 150px;
-    left: -2%;
-    top: 500px;
-    transform: rotate(-5deg);
-}
+    #phone {
+        display: block;
+        height: 450px;
+        left: 22.5%;
+        top: 350px;
+        transform: rotate(-15deg);
+    }
 
-#notebook {
-    height: 600px;
-    right: 3%;
-    top: 450px;
-    transform: rotate(25deg);
-}
+    #pen {
+        display: block;
+        height: 200px;
+        right: 30%;
+        top: 300px;
+        transform: rotate(15deg);
+    }
 
-#letter {
-    display: none;
-}
+    #peach {
+        display: block;
+        height: 150px;
+        left: 10%;
+        top: 500px;
+        transform: rotate(-5deg);
+    }
 
-#laptop {
-    height: 600px;
-    right: -30%;
-    top: -150px;
-    transform: rotate(25deg);
-}
+    #notebook {
+        display: block;
+        height: 600px;
+        right: 3%;
+        top: 450px;
+        transform: rotate(25deg);
+    }
 
-.content h1 {
-    font-size: 100px;
-    color: #262626;
-    font-weight: 300;
-    margin: 0;
-}
+    #letter {
+        display: none;
+    }
 
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    width: 280px;
-    margin-left: -140px;
-}
+    #laptop {
+        display: block;
+        height: 600px;
+        right: -15%;
+        top: -220px;
+        transform: rotate(25deg);
+    }
 
-.email {
-    width: 170px;
-    height: 30px;
-    font-family: 'Advent Pro', sans-serif;
-    font-size: 20px;
-    border-radius: 7px;
-    display:inline;
-}
+    .content h1 {
+        padding-top: 50px;
+        font-size: 100px;
+        color: #262626;
+        font-weight: 300;
+        margin: 0;
+    }
 
-.button {
-    font-family: 'Advent Pro', sans-serif;
-    color: black;
-    font-size: 17px;
-    border-radius: 7px;
-    border-color: #ADD8E6;
-    background-color: #ADD8E6;
-}
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        width: 280px;
+        margin-left: -140px;
+    }
 
-.button:hover {
-    color: black;
-    font-size: 20px;
-    border-radius: 4px;
-}
+    .email {
+        width: 170px;
+        height: 30px;
+        font-family: 'Advent Pro', sans-serif;
+        font-size: 20px;
+        border-radius: 7px;
+        display:inline;
+    }
 
-.content .date {
-    font-size: 30px;
-}
+    .button {
+        font-family: 'Advent Pro', sans-serif;
+        color: black;
+        font-size: 17px;
+        border-radius: 7px;
+        border-color: #ADD8E6;
+        background-color: #ADD8E6;
+    }
 
-.shake {
-	-webkit-animation-name: spaceboots;
-	-webkit-animation-duration: 0.4s;
-	-webkit-transform-origin:50% 50%;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
+    .button:hover {
+        color: black;
+        font-size: 20px;
+        border-radius: 4px;
+    }
+
+    .content .date {
+        font-size: 30px;
+    }
+
+    .shake {
+        -webkit-animation-name: spaceboots;
+        -webkit-animation-duration: 0.4s;
+        -webkit-transform-origin:50% 50%;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+    }
+
 }
 
 
