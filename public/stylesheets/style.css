@@ -112,12 +112,12 @@ body {
     color: black;
     font-size: 17px;
     border-radius: 7px;
-    border-color: #99761B;
-    background-color: #99761B;
+    border-color: #ADD8E6;
+    background-color: #ADD8E6;
 }
 
 .button:hover {
-    color: white;
+    color: black;
     font-size: 20px;
     border-radius: 4px;
 }
