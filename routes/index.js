@@ -40,7 +40,7 @@ router.post('/getEmailID/:email', function(req, response){
 			response.send(err);
 		} else {
 			if (rows.length === 0) {
-				var em = {email_id: newEmail}
+				var em = {email_id: newEmail};
 				con.query('INSERT INTO email_list SET ?', em, function(err, res){
 		            if (err) {
 		              console.log(err);
