@@ -12,6 +12,10 @@ body {
     overflow: hidden;
 }
 
+.error:focus {
+  outline-color: red;
+}
+
 @media (min-width: 320px) {
 
     .background {
@@ -235,7 +239,7 @@ body {
         background-color: #ADD8E6;
     }
 
-    .button:hover {
+    .button:hover:enabled {
         color: black;
         font-size: 20px;
         border-radius: 4px;

@@ -43,14 +43,14 @@ router.post('/getEmailID/:email', function(req, response){
 				var em = {email_id: newEmail};
 				con.query('INSERT INTO email_list SET ?', em, function(err, res){
 		            if (err) {
-		              console.log(err);
+		              response.send(err);
 		            } else {
-		              response.send('EMAIL ADDED');
+		              response.json({emailAdded: true});
 		            }
 
 		        });
 			} else {
-				response.send('EMAIL EXISTS');
+				response.send({emailAdded: false});
 			}
 		}
 	});
