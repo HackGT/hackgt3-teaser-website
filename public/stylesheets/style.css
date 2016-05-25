@@ -109,8 +109,17 @@ body {
 
 .button {
     font-family: 'Advent Pro', sans-serif;
-    height: 30px;
-    font-size: 15px;
+    color: black;
+    font-size: 17px;
+    border-radius: 7px;
+    border-color: #99761B;
+    background-color: #99761B;
+}
+
+.button:hover {
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
 }
 
 .content .date {
@@ -124,6 +133,8 @@ body {
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
 }
+
+
 
 @-webkit-keyframes spaceboots {
 	0% { -webkit-transform: translate(2px, 1px) rotate(-15deg); }
