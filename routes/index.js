@@ -4,6 +4,9 @@ var bodyParser = require('body-parser');
 var mysql = require("mysql");
 var path = require("path");
 var config = require("./config.json");
+var sendgridapikey = require("./sendgridAPIKey.json");
+var sendgrid = require('sendgrid')(sendgridapikey.API);
+
 //var lastRegisteredID = 2;
 
 
@@ -45,7 +48,17 @@ router.post('/getEmailID/:email', function(req, response){
 		            if (err) {
 		              response.send(err);
 		            } else {
-		              response.json({emailAdded: true});
+
+		            	var emailconf   = new sendgrid.Email({
+						  to      : newEmail,
+						  from    : 'hello@hackgt.com',
+						  subject : 'HackGT 2016 Subscription',
+						  text    : 'Thank you for subscribing to HackGT 2016. We will email you with any updates.'
+						});
+						sendgrid.send(emailconf, function(err, json) {
+						  if (err) { return console.error(err); }
+						  response.json({emailAdded: true});
+						});
 		            }
 
 		        });
