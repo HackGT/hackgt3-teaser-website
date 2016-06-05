@@ -30,6 +30,19 @@
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-  <script src="/javascripts/script.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    setTimeout(function(){
+      $('#phone').addClass('shake');
+      setTimeout(function(){
+        $('#phone').attr('src', 'img/phoneB.png');
+        setTimeout(function(){
+          $('#phone').removeClass('shake');
+        }, 750);
+      }, 100);
+    }, 5000);
+  });
+  </script>
 </body>
 </html>
