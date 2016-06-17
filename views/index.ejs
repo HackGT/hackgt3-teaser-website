@@ -10,15 +10,30 @@
 <body ng-controller="TeaserController">
   <div class="res">
   	<div class="background">
-  		<img src="img/laptop.png" id="laptop">
-  		<img src="img/letter.png" id="letter">
-  		<img src="img/notebook.png" id="notebook">
-  		<img src="img/pen.png" id="pen">
-  		<img src="img/phoneA.png" id="phone">
-  		<img src="img/plant.png" id="plant">
-  		<img src="img/tea.png" id="tea">
-  		<img src="img/headphones.png" id="headphones">
-  		<img src="img/peach.png" id="peach">
+      <div class="layer" data-depth="0.10">
+        <img src="img/laptop.png" id="laptop">
+      </div>
+      <div class="layer" data-depth="0.30">
+    		<img src="img/phoneA.png" id="phone">
+      </div>
+      <div class="layer" data-depth="0.20">
+        <img src="img/notebook.png" id="notebook">
+      </div>
+      <div class="layer" data-depth="0.40">
+        <img src="img/pen.png" id="pen">
+      </div>
+      <div class="layer" data-depth="0.20">
+    		<img src="img/plant.png" id="plant">
+      </div>
+      <div class="layer" data-depth="0.35">
+    		<img src="img/tea.png" id="tea">
+      </div>
+      <div class="layer" data-depth="0.25">
+    		<img src="img/headphones.png" id="headphones">
+      </div>
+      <div class="layer" data-depth="0.35">
+    		<img src="img/peach.png" id="peach">
+      </div>
   	</div>
   </div>
 	<div class="content">
@@ -33,8 +48,10 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.parallax.min.js"></script>
   <script type="text/javascript">
   $(document).ready(function(){
+    $('.background').parallax();
     setTimeout(function(){
       $('#phone').addClass('shake');
       setTimeout(function(){
