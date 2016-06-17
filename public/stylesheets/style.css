@@ -23,6 +23,24 @@ body {
   color: #ab323c;
 }
 
+.bottomBar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    background: #463267;
+    color: #eee;
+    font-size: 18px;
+    opacity: .75;
+    transition: .3s all;
+}
+
+.bottomBar:hover {
+    opacity: 1;
+    padding: 20px;
+}
+
 .shake {
     -webkit-animation-name: spaceboots;
     -webkit-animation-duration: 0.4s;
