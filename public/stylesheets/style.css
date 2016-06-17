@@ -17,261 +17,156 @@ body {
   border-color: red;
 }
 
-@media (min-width: 320px) {
-
-    .background {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-    }
-
-    #headphones {
-        display: none;
-    }
-
-    #tea {
-        position: fixed;
-        height: 150px;
-        left: -3.5%;
-        top: 2.5%;
-    }
-
-    #plant {
-        position: fixed;
-        height: 175px;
-        left: -17.5%;
-        top: 28.5%;
-    }
-
-    #phone {
-        position: fixed;
-        height: 300px;
-        left: 0%;
-        top: 60%;
-        transform: rotate(-15deg);
-    }
-
-    #pen {
-        position: fixed;
-        height: 300px;
-        right: 2%;
-        top: 65%;
-        transform: rotate(15deg);
-    }
-
-    #peach {
-        display: none;
-    }
-
-    #notebook {
-        position: fixed;
-        height: 450px;
-        left: 45%;
-        top: 60%;
-        transform: rotate(25deg);
-    }
-
-    #letter {
-        display: none;
-    }
-
-    #laptop {
-        position: fixed;
-        height: 350px;
-        top: -5%;
-        transform: rotate(25deg);
-    }
-
-    .shake {
-        -webkit-animation-name: spaceboots;
-        -webkit-animation-duration: 0.4s;
-        -webkit-transform-origin:50% 50%;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-    }
-
-    .content {
-        display: block;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
-    .content h1 {
-        font-size: 75px;
-        color: #262626;
-        font-weight: 300;
-        margin: 0;
-    }
-
-    .content .date {
-        font-size: 30px;
-    }
-
-    .email {
-        width: 210px;
-        height: 30px;
-        font-family: 'Advent Pro', sans-serif;
-        font-size: 20px;
-        border-radius: 7px;
-        display:inline;
-    }
-
+.email {
+    width: 210px;
+    height: 30px;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 20px;
+    display: inline;
 }
 
-@media (min-width: 750px) {
-
-    .background {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-
-    .background img {
-        position: absolute;
-    }
-
-    #headphones {
-        position: fixed;
-        display: block;
-        height: 230px;
-        left: 15%;
-        top: 180px;
-        transform: rotate(-8deg);
-    }
-
-    #tea {
-        position: fixed;
-        display: block;
-        height: 200px;
-        left: 25%;
-        top: 0px;
-    }
-
-    #plant {
-        position: fixed;
-        display: block;
-        right: 0px;
-        left: 70%;
-        top: 200px;
-        height: 350px;
-    }
-
-    #phone {
-        display: block;
-        height: 450px;
-        left: 22.5%;
-        top: 350px;
-        transform: rotate(-15deg);
-    }
-
-    #pen {
-        display: block;
-        height: 200px;
-        right: 30%;
-        top: 300px;
-        transform: rotate(15deg);
-    }
-
-    #peach {
-        display: block;
-        height: 150px;
-        left: 10%;
-        top: 500px;
-        transform: rotate(-5deg);
-    }
-
-    #notebook {
-        display: block;
-        height: 600px;
-        right: 3%;
-        top: 450px;
-        transform: rotate(25deg);
-    }
-
-    #letter {
-        display: none;
-    }
-
-    #laptop {
-        display: block;
-        height: 600px;
-        right: -15%;
-        top: -230px;
-        transform: rotate(25deg);
-    }
-
-    .content h1 {
-        padding-top: 50px;
-        font-size: 100px;
-        color: #262626;
-        font-weight: 300;
-        margin: 0;
-    }
-
-    .content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-        width: 280px;
-        margin-left: -140px;
-    }
-
-    .email {
-        width: 170px;
-        height: 30px;
-        font-family: 'Advent Pro', sans-serif;
-        font-size: 20px;
-        border-radius: 7px;
-        display:inline;
-    }
-
-    .button {
-        font-family: 'Advent Pro', sans-serif;
-        color: black;
-        font-size: 17px;
-        border-radius: 7px;
-        border-color: #ADD8E6;
-        background-color: #ADD8E6;
-    }
-
-    .button:hover:enabled {
-        color: black;
-        font-size: 20px;
-        border-radius: 4px;
-    }
-
-    .content .date {
-        font-size: 30px;
-    }
-
-    .shake {
-        -webkit-animation-name: spaceboots;
-        -webkit-animation-duration: 0.4s;
-        -webkit-transform-origin:50% 50%;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-    }
-
+.shake {
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.4s;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
 }
+
+
+.background {
+    position: absolute;
+    width: 1400px;
+    height: 100%;
+    left: 50%;
+    margin-left: -700px;
+}
+
+.background img {
+    position: absolute;
+}
+
+#headphones {
+    display: block;
+    height: 230px;
+    left: 15%;
+    top: 180px;
+    transform: rotate(-8deg);
+}
+
+#tea {
+    display: block;
+    height: 200px;
+    left: 25%;
+    top: 0px;
+}
+
+#plant {
+    display: block;
+    right: 0px;
+    left: 70%;
+    top: 250px;
+    height: 350px;
+}
+
+#phone {
+    display: block;
+    height: 450px;
+    left: 22.5%;
+    top: 350px;
+    transform: rotate(-15deg);
+}
+
+#pen {
+    display: block;
+    height: 200px;
+    right: 30%;
+    top: 300px;
+    transform: rotate(15deg);
+}
+
+#peach {
+    display: block;
+    height: 150px;
+    left: 10%;
+    top: 500px;
+    transform: rotate(-5deg);
+}
+
+#notebook {
+    display: block;
+    height: 600px;
+    right: 23%;
+    top: 450px;
+    transform: rotate(25deg);
+}
+
+#letter {
+    display: none;
+}
+
+#laptop {
+    display: block;
+    height: 600px;
+    right: -15%;
+    top: -230px;
+    transform: rotate(25deg);
+}
+
+.content h1 {
+    font-size: 100px;
+    color: #262626;
+    font-weight: 300;
+    margin: 0;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 280px;
+    margin-left: -140px;
+    margin-top: -93px;
+}
+
+.email {
+    width: 170px;
+    height: 30px;
+}
+
+.button {
+    font-family: 'Advent Pro', sans-serif;
+    color: black;
+    font-size: 17px;
+    border-radius: 7px;
+    border-color: #ADD8E6;
+    background-color: #ADD8E6;
+}
+
+.button:hover:enabled {
+    color: black;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.content .date {
+    font-size: 30px;
+}
+
 
 
 
 @-webkit-keyframes spaceboots {
-	0% { -webkit-transform: translate(2px, 1px) rotate(-15deg); }
-	10% { -webkit-transform: translate(-1px, -2px) rotate(-16deg); }
-	20% { -webkit-transform: translate(-3px, 0px) rotate(-14deg); }
-	30% { -webkit-transform: translate(0px, 2px) rotate(-15deg); }
-	40% { -webkit-transform: translate(1px, -1px) rotate(-14deg); }
-	50% { -webkit-transform: translate(-1px, 2px) rotate(-16deg); }
-	60% { -webkit-transform: translate(-3px, 1px) rotate(-15deg); }
-	70% { -webkit-transform: translate(2px, 1px) rotate(-16deg); }
-	80% { -webkit-transform: translate(-1px, -1px) rotate(-14deg); }
-	90% { -webkit-transform: translate(2px, 2px) rotate(-15deg); }
-	100% { -webkit-transform: translate(1px, -2px) rotate(-16deg); }
+    0% { -webkit-transform: translate(2px, 1px) rotate(-15deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-16deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(-14deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(-15deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(-14deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-16deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(-15deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-16deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(-14deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(-15deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-16deg); }
 }
