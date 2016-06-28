@@ -1,4 +1,5 @@
 {
+  "gaId": "GOOGLE ANALYTICS ID",
   "sendgridAPIKey": "SENDGRID API KEY",
   "mysql": {
   	"host": "MYSQL HOST",

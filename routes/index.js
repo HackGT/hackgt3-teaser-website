@@ -6,9 +6,12 @@ var path = require("path");
 
 var config = require("../config.json");
 var mysqlConfig = config.mysql;
+var googleAnalyticsId = config.gaId;
 var sendgridapikey = config.sendgridAPIKey;
 
 var sendgrid = require('sendgrid')(sendgridapikey);
+
+
 
 //var lastRegisteredID = 2;
 
@@ -35,7 +38,7 @@ setInterval(function () {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index');
+  res.render('index', { googleAnalyticsId: googleAnalyticsId });
 });
 
 router.post('/getEmailID/:email', function(req, response){
