@@ -3,15 +3,18 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 var mysql = require("mysql");
 var path = require("path");
-var config = require("./config.json");
-var sendgridapikey = require("./sendgridAPIKey.json");
-var sendgrid = require('sendgrid')(sendgridapikey.API);
+
+var config = require("../config.json");
+var mysqlConfig = config.mysql;
+var sendgridapikey = config.sendgridAPIKey;
+
+var sendgrid = require('sendgrid')(sendgridapikey);
 
 //var lastRegisteredID = 2;
 
 
 // First you need to create a connection to the db
-var con = mysql.createConnection(config);
+var con = mysql.createConnection(mysqlConfig);
 
 
 /**

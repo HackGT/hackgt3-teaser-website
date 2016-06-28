@@ -1,0 +1,9 @@
+{
+  "sendgridAPIKey": "SENDGRID API KEY",
+  "mysql": {
+  	"host": "MYSQL HOST",
+  	"user": "MYSQL USER",
+  	"password": "MYSQL PASSWORD",
+  	"database": "MYSQL DB"
+  }
+}

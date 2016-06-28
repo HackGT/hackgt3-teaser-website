@@ -1,8 +1,8 @@
-#sendgridapikey
-sendgridAPIKey.json
-# mysqldetails
+# configuration and keys (mysql creds and sendgrid api key)
 config.json
+
 .DS_Store
+
 # Logs
 logs
 *.log
