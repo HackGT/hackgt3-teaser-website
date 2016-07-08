@@ -9,7 +9,6 @@ app.controller("TeaserController", ['$scope', '$http', function($scope, $http) {
     if ($scope.emailValid()) {
       $http.post("/getEmailID/" + $scope.email, {}).then(
         function(res) {
-          console.log(res);
           if (res.data.emailAdded) {
             alert("Subscription Successful!");
             $scope.email = '';
