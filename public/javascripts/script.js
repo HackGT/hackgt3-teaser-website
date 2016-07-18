@@ -13,7 +13,7 @@ app.controller("TeaserController", ['$scope', '$http', function($scope, $http) {
             alert("Subscription Successful!");
             $scope.email = '';
           } else if (!res.data.emailAdded) {
-            alert("Email alredy exists");
+            alert("Email already exists");
           }
         },
         function(err) {
