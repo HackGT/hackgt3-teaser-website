@@ -26,8 +26,8 @@ var con = mysql.createConnection(mysqlConfig);
 **/
 con.connect(function(err){
   if(err){
-    console.log('Error connecting to Db');
-    return;
+    console.error('Error connecting to Db');
+    throw(err);
   }
   console.log('Connection established');
 });
@@ -66,7 +66,7 @@ router.post('/getEmailID/:email', function(req, response){
               response.json({emailAdded: true});
             });
           }
-          
+
         });
       } else {
         response.send({emailAdded: false});
