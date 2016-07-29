@@ -40,10 +40,6 @@ body {
     overflow: hidden;
 }
 
-.error:focus {
-  color: #ab323c;
-}
-
 .bottomBar {
     width: 100%;
     position: absolute;
