@@ -46,6 +46,7 @@ router.post('/getEmailID/:email', function(req, response){
   console.log(newEmail);
   con.query('SELECT * FROM email_list WHERE email_id = ?', newEmail, function(err, rows){
     if (err) {
+      response.status(400);
       response.send(err);
     } else {
       if (rows.length === 0) {

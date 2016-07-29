@@ -1,4 +1,4 @@
-<html lang="en" ng-app="teaser">
+<html lang="en">
 <head>
   <meta name="viewport" content="width=device-width" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
   <title>HackGT</title>
 </head>
-<body ng-controller="TeaserController">
+<body>
   <div class="res">
   	<div class="background">
       <div class="layer" data-depth="0.10">
@@ -39,31 +39,16 @@
 	<div class="content">
 	  <h1>Hack<strong>GT</strong></h1>
 	  <div class="date">September 23 – 25, 2016</div>
-    <div ng-form name="myForm">
-      <input name="emailBox" placeholder="Email" id="emailInput" class="email" type="text" ng-model="email" ng-class="{error: !emailValid() && myForm.emailBox.$dirty && email.trim()}" required>
-      <button class="button" type="SUBMIT" ng-click="submitEmail()">Subscribe</button>
-    </div>
+    <form id="emailForm">
+      <input name="emailBox" placeholder="Email" id="emailInput" class="email" type="email" required>
+      <button class="button" type="submit">Subscribe</button>
+    </form>
 	</div>
   <a href="http://sponsors.hackgt.com/"><div class="bottomBar">Sponsorship Information</div></a>
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
   <script type="text/javascript" src="javascripts/jquery.parallax.min.js"></script>
-  <script type="text/javascript">
-  $(document).ready(function(){
-    $('.background').parallax();
-    setTimeout(function(){
-      $('#phone').addClass('shake');
-      setTimeout(function(){
-        $('#phone').attr('src', 'img/phoneB.png');
-        setTimeout(function(){
-          $('#phone').removeClass('shake');
-        }, 750);
-      }, 100);
-    }, 5000);
-  });
-  </script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
